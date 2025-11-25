@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PDF to Audiobook</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>📘 PDF to Audiobook Converter</h2>
+    <input type="file" id="fileInput" accept=".pdf"><br>
+
+    <label>Start Page:</label>
+    <input type="number" id="startPage" min="1" value="1" />
+    <label>End Page:</label>
+    <input type="number" id="endPage" min="1" /><br>
+
+    <label>Select Language:</label>
+    <select id="language">
+      <option value="en">English</option>
+      <option value="ta">Tamil</option>
+      <option value="hi">Hindi</option>
+      <option value="kn">Kannada</option>
+      <option value="ko">Korean</option>
+      <option value="de">German</option>
+      <option value="ja">Japanese</option>
+      <option value="te">Telugu</option>
+      <option value="ml">Malayalam</option>
+      
+      <option value="ru">Russian</option>
+    </select><br>
+
+    <button id="convertBtn">Convert to Audio</button>
+    <div id="loader" style="display:none;">🌀 Converting, please wait...</div>
+    <p id="status"></p>
+
+    <audio id="audioPlayer" controls style="display: none;"></audio><br>
+    <a id="downloadLink" style="display: none;" class="download-btn">⬇️ Download Audio</a>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

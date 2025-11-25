@@ -1,0 +1,111 @@
+/* Base styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Wrapper container */
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  color: #2e86de;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* Input fields */
+input[type="file"],
+select,
+input[type="text"],
+input[type="number"],
+button {
+  display: block;
+  width: 100%;
+  padding: 14px 16px;
+  margin: 15px 0;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+  background-color: #2e86de;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background-color: #1b4f72;
+  transform: scale(1.02);
+}
+
+/* Status messages */
+#status {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Audio player and download link */
+.audio-player {
+  margin-top: 20px;
+  text-align: center;
+}
+
+audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Loading spinner */
+.spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #2e86de;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+  display: none;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  input,
+  select,
+  button {
+    font-size: 15px;
+    padding: 12px;
+  }
+}
