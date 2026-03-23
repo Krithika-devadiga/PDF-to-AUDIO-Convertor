@@ -78,4 +78,3 @@ Sends text to gTTS
 
 Generates .mp3 file
 
-Electron UI shows download link
